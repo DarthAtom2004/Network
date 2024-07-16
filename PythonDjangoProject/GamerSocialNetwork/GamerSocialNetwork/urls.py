@@ -21,5 +21,7 @@ from MainNetworkApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('MainNetworkApp.urls'))
+    path('', include('MainNetworkApp.urls')),
+    path('libraryGame', views.GameLibrary),
+    path('libraryGame/<int:game_id>', views.GamePage)
 ]
