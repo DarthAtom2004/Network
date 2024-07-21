@@ -17,8 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from MainNetworkApp import views
+from MainNetworkApp.views import page_not_found
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path('', include('MainNetworkApp.urls'))
+=======
+    path('', include('MainNetworkApp.urls')),
+>>>>>>> 914d61577b9e6261f09688e3ddce116cc9cf222f
 ]
+
+handler404 = page_not_found
