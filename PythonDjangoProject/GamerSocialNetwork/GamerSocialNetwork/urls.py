@@ -21,11 +21,8 @@ from MainNetworkApp.views import page_not_found
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
-    path('', include('MainNetworkApp.urls'))
-=======
     path('', include('MainNetworkApp.urls')),
->>>>>>> 914d61577b9e6261f09688e3ddce116cc9cf222f
+    path('', include('MainNetworkApp.urls'))
 ]
 
 handler404 = page_not_found
